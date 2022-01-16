@@ -8,7 +8,7 @@
 
 Site: Frontend Mentor
 
-Challenge: NFT preview card component
+Challenge: Column Preview Card Component
 
 Difficulty: Newbie
 

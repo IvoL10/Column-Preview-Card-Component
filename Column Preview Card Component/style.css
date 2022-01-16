@@ -1,0 +1,151 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lexend Deca', sans-serif;
+    /* font-family: 'Big Shoulders Display', cursive; */
+}
+
+.container{
+    display: flex;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 60px;
+    border-radius: 8px 0px 0px 8px;
+    height: 540px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 60px;
+    height: 540px;
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 60px;
+    border-radius: 0px 8px 8px 0px;
+    height: 540px;
+}
+
+.h2 {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.container .p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 28px;
+    margin-top: 30px;
+}
+
+.sedans p {
+    width: 200px;
+}
+
+.suvs p {
+    width: 209px;
+}
+
+.luxury p {
+    width: 210px;
+}
+
+.button {
+    border: none;
+    border-radius: 50px;
+    width: 142px;
+    height: 46px;
+    margin-top: 120px;
+    font-weight: 700;
+}
+
+.sedans .button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs .button {
+    color:hsl(184, 100%, 22%) ;
+}
+
+.luxury .button {
+    color:hsl(179, 100%, 13%) ;
+}
+
+.button:hover {
+    border: 2px solid white;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+
+.attribution {
+    margin-top: 30px; 
+}
+
+
+@media (max-width: 1315px) {
+
+    body {
+        height: 100%;  /* I don't know why this line of code is here or how it works
+                           but it was the only way I could solve the problem I was having 
+                           with making my class="container" responsive. */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 82%;
+    }
+
+    .sedans p {
+        width: 220px;
+    }
+    
+    .suvs p {
+        width: 220px;
+    }
+    
+    .luxury p {
+        width: 220px;
+    }
+
+    .button {
+        margin-top:30px; 
+    }
+
+    .sedans {
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .suvs {
+        border-radius: 0px 0px 0px 0px;
+    }
+    .luxury {
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    .attribution {
+        margin-top: 40px;
+    }
+    
+}

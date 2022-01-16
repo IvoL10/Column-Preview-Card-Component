@@ -1,4 +1,4 @@
-# Frontend Mentor - 3-column preview card component
+# Frontend Mentor - Column Preview Card Component
 
 ![Design preview for the 3-column preview card component coding challenge](./design/My-code.png)
 
